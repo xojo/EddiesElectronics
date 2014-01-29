@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1440\margr1440\margb1800\margt1800\vieww14760\viewh11860\viewkind0
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f0\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+Note
+\b0 \expnd0\expndtw0\kerning0
+: The Orders example requires the most recent version of Real Studio.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f1\fs20 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f0\b\fs24 \cf0 \expnd0\expndtw0\kerning0
+Files Required\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+This example includes three files that must be included with the built app. And in fact, these files will automatically be copied, via Build Automation, to the appropriate place when you build this example. The files are:\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b \cf0 \expnd0\expndtw0\kerning0
+DBErrorLog\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+The code in this example accesses two databases. If any errors occur while accessing these databases, the error message will be written to the DBErrorLog file. A blank copy of this document is included and must be included with the built app. You will need to make sure this file has read/write permissions set after you copy it to your web server (if you are going to deploy a built version of this project). The file must be there because the app may not be able to create the document due to permissions issues.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b \cf0 \expnd0\expndtw0\kerning0
+Logs.sdb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+This database holds log data created when users access the database, encounter JavaScript errors or any time the application launches. The project contains a log page that will display data from this database. You can reach it by accessing the app and replacing the current customer ID hashtag in the URL field with the word \'93log\'94 and pressing return. This database also must be copied to your web server and its permission set to read/write.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b \cf0 \expnd0\expndtw0\kerning0
+Orders.sdb\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+This database contains all the data about customers, invoices, etc. When a user connects to the app, an in-memory database using this database (along with all of its data) as a template. The user can then make all the changes they want and when they quit the app, the in-memory database will be removed from memory and any changes they made will be lost. This this is a public example, it allows people to make all the changes they want without those changes being exposed to others or becoming permanent. This database must be copied to your web server and its permissions set to read only.}
