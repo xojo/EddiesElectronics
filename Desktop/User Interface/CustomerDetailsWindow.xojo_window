@@ -23,7 +23,7 @@ Begin Window CustomerDetailsWindow
    MinWidth        =   800
    Placement       =   0
    Resizeable      =   True
-   Title           =   "Customer Management"
+   Title           =   "Customer Details"
    Visible         =   True
    Width           =   844
    Begin Rectangle MapBackgroundRectangle
@@ -130,7 +130,7 @@ Begin Window CustomerDetailsWindow
       Left            =   -41
       LockedInPosition=   False
       Scope           =   0
-      TabPanelIndex   =   "0"
+      TabPanelIndex   =   0
       Top             =   712
       Visible         =   True
       Width           =   561
@@ -1233,7 +1233,7 @@ End
 		  iw.ShowModalWithin(Self)
 		  
 		  If iw.InvoiceNumber <> "" Then
-		    // The user created a new invoice, so reload the 
+		    // The user created a new invoice, so reload the
 		    // invoice list and select the new invoice
 		    LoadInvoices(iw.InvoiceNumber)
 		  End If
