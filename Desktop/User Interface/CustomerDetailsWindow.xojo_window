@@ -23,7 +23,7 @@ Begin Window CustomerDetailsWindow
    MinWidth        =   800
    Placement       =   0
    Resizeable      =   True
-   Title           =   "Customer Details"
+   Title           =   "Customer Management"
    Visible         =   True
    Width           =   844
    Begin Rectangle MapBackgroundRectangle
